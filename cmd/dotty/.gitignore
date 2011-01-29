@@ -1,0 +1,6 @@
+.deps
+Makefile
+Makefile.in
+dotty
+*.pdf
+CMakeFiles CMakeTmp CMakeFiles CMakeCache.txt cmake_install.cmake

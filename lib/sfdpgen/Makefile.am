@@ -1,0 +1,34 @@
+# $Id: Makefile.am,v 1.8 2009/06/15 16:26:11 arif Exp $ $Revision: 1.8 $
+## Process this file with automake to produce Makefile.in
+
+if WITH_CGRAPH
+GRAPH = cgraph
+else
+GRAPH = graph
+endif
+
+AM_CPPFLAGS = \
+        -I$(top_srcdir) \
+        -I$(top_srcdir)/lib/common \
+	-I$(top_srcdir)/lib/gvc \
+	-I$(top_srcdir)/lib/neatogen \
+	-I$(top_srcdir)/lib/sparse \
+	-I$(top_srcdir)/lib/rbtree \
+	-I$(top_srcdir)/lib/pack \
+	-I$(top_srcdir)/lib/pathplan \
+	-I$(top_srcdir)/lib/$(GRAPH) \
+	-I$(top_srcdir)/lib/cdt
+
+noinst_HEADERS = sfdpinternal.h spring_electrical.h \
+	LinkedList.h sparse_solve.h post_process.h \
+	QuadTree.h Multilevel.h sfdp.h PriorityQueue.h 
+
+if WITH_SFDP
+noinst_LTLIBRARIES = libsfdpgen_C.la
+endif
+
+libsfdpgen_C_la_SOURCES = sfdpinit.c spring_electrical.c \
+	LinkedList.c sparse_solve.c post_process.c \
+	QuadTree.c Multilevel.c PriorityQueue.c
+
+EXTRA_DIST = Makefile.old sfdp.vcproj

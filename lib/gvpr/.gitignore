@@ -1,0 +1,11 @@
+*.la
+*.lo
+.deps
+.libs
+gdefs.h
+mkdefs
+Makefile
+Makefile.in
+*.pdf
+*.pc
+CMakeFiles CMakeTmp CMakeFiles CMakeCache.txt cmake_install.cmake

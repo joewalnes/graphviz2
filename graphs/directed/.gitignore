@@ -1,0 +1,10 @@
+*.la
+*.lo
+.deps
+.libs
+.xvpics
+Makefile
+Makefile.in
+*.gv.*
+node*.png
+CMakeFiles CMakeTmp CMakeFiles CMakeCache.txt cmake_install.cmake

@@ -1,0 +1,17 @@
+atk-*
+cairo-*
+fontconfig-*
+freetype-*
+gd-*
+gettext-*
+glib-*
+gtk+-*
+gts-*
+libXft-*
+libiconv-*
+libpng-*
+jpeg*
+pango-*
+pixman-*
+pkg-config-*
+tiff-*

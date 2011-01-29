@@ -1,0 +1,10 @@
+*.la
+*.lo
+*.pc
+.deps
+.libs
+Makefile
+Makefile.in
+smyrna
+smyrna_static
+*.pdf

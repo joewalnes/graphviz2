@@ -1,0 +1,612 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: Graphviz version 2.19.0 (Fri Jun 20 21:16:04 UTC 2008)
+%%For: (ellson) John Ellson
+%%Title: G
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+1 setmiterlimit
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+[ {Catalog} << /URI << /Base (http://www.graphviz.org/doc/info/output.html) >> >>
+/PUT pdfmark
+%%Page: 1 1
+%%PageBoundingBox: 36 36 557 234
+%%PageOrientation: Portrait
+<< /PageSize [557 234] >> setpagedevice
+0 0 1 beginpage
+gsave
+36 36 521 198 boxprim clip newpath
+1 1 set_scale 0 rotate 40 40 translate
+[ /CropBox [36 36 557 234] /PAGES pdfmark
+[ /Rect [ -4 -4 517 194 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.graphviz.org/doc/info/output.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0.000 0.000 0.000 graphcolor
+14 /Times-Roman set_font
+238.5 7.9 moveto 35 (output) alignedtext
+% cluster0
+gsave
+[ /Rect [ 100 33 298 110 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.graphviz.org/doc/info/arrows.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0.165 1.000 1.000 graphcolor
+newpath 100 33 moveto
+100 110 lineto
+298 110 lineto
+298 33 lineto
+closepath fill
+1 setlinewidth
+filled
+0.000 0.000 0.000 graphcolor
+newpath 100 33 moveto
+100 110 lineto
+298 110 lineto
+298 33 lineto
+closepath stroke
+0.000 0.000 0.000 graphcolor
+14 /Times-Roman set_font
+179.5 93.9 moveto 39 (arrows) alignedtext
+grestore
+% lang
+gsave
+[ /Rect [ 212 154 268 190 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.graphviz.org/doc/info/lang.html) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+240 172 27.99 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14 /Times-Roman set_font
+227.5 167.9 moveto 25 (lang) alignedtext
+grestore
+% colors
+gsave
+[ /Rect [ 0 35 90 83 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.graphviz.org/doc/info/output.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0.537 0.247 0.902 nodecolor
+45 59 44.76 24.04 ellipse_path fill
+1 setlinewidth
+filled
+0.000 0.000 0.000 nodecolor
+45 59 44.76 24.04 ellipse_path stroke
+[ /Rect [ 21 46 69 72 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.graphviz.org/doc/info/colors.html) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+solid
+0.000 0.000 0.000 nodecolor
+newpath 21 46 moveto
+21 72 lineto
+69 72 lineto
+69 46 lineto
+closepath stroke
+0.333 1.000 1.000 nodecolor
+newpath 24 49 moveto
+24 69 lineto
+66 69 lineto
+66 49 lineto
+closepath fill
+1 setlinewidth
+solid
+0.333 1.000 1.000 nodecolor
+newpath 24 49 moveto
+24 69 lineto
+66 69 lineto
+66 49 lineto
+closepath stroke
+1 setlinewidth
+solid
+0.000 0.000 0.000 nodecolor
+newpath 24 49 moveto
+24 69 lineto
+66 69 lineto
+66 49 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+14 /Times-Roman set_font
+27 55.73 moveto 36 (colors) alignedtext
+[ /Rect [ 21 46 69 72 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.graphviz.org/doc/info/output.html) >>
+  /Subtype /Link
+/ANN pdfmark
+grestore
+% lang->colors
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 215 164 moveto
+185 155 134 136 96 110 curveto
+87 104 79 96 71 89 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 73.22 86.22 moveto
+64 81 lineto
+67.95 90.83 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 73.22 86.22 moveto
+64 81 lineto
+67.95 90.83 lineto
+closepath stroke
+[ /Rect [ 212 161 218 167 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (lang->colors) >>
+  /Subtype /Link
+/ANN pdfmark
+[ /Rect [ 61 78 67 84 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (lang->colors) >>
+  /Subtype /Link
+/ANN pdfmark
+grestore
+% command
+gsave
+[ /Rect [ 190 41 290 77 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.graphviz.org/doc/info/command.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0.000 0.000 0.753 nodecolor
+240 59 50.03 18 ellipse_path fill
+1 setlinewidth
+filled
+0.000 0.000 0.000 nodecolor
+240 59 50.03 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14 /Times-Roman set_font
+212 54.9 moveto 56 (command) alignedtext
+grestore
+% lang->command
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 240 154 moveto
+240 136 240 108 240 87 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 243.5 87 moveto
+240 77 lineto
+236.5 87 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 243.5 87 moveto
+240 77 lineto
+236.5 87 lineto
+closepath stroke
+[ /Rect [ 237 151 243 157 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.graphviz.org/doc/info/shapes.html) >>
+  /Subtype /Link
+/ANN pdfmark
+[ /Rect [ 237 74 243 80 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.graphviz.org/doc/info/shapes.html) >>
+  /Subtype /Link
+/ANN pdfmark
+grestore
+% size
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+335 59 27.1 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14 /Times-Roman set_font
+323.5 54.9 moveto 23 (size) alignedtext
+grestore
+% lang->size
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 256 157 moveto
+269 145 288 127 302 110 curveto
+308 102 314 93 320 85 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 323.2 86.44 moveto
+325 76 lineto
+317.08 83.04 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 323.2 86.44 moveto
+325 76 lineto
+317.08 83.04 lineto
+closepath stroke
+[ /Rect [ 253 154 259 160 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (headurl) >>
+  /Subtype /Link
+/ANN pdfmark
+[ /Rect [ 322 73 328 79 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (headurl) >>
+  /Subtype /Link
+/ANN pdfmark
+[ /Rect [ 312.5 77.5 335.5 94.5 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (headurl) >>
+  /Subtype /Link
+/ANN pdfmark
+0.000 0.000 0.000 edgecolor
+14 /Times-Roman set_font
+312.5 81.9 moveto 23 (size) alignedtext
+grestore
+% name
+gsave
+[ /Rect [ 108 41 172 77 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (G name) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+140 59 32.16 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14 /Times-Roman set_font
+124.5 54.9 moveto 31 (name) alignedtext
+grestore
+% word
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+386 172 30.77 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14 /Times-Roman set_font
+371.5 167.9 moveto 29 (word) alignedtext
+grestore
+% word->size
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 378 154 moveto
+370 136 356 107 347 85 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 350.26 83.72 moveto
+343 76 lineto
+343.86 86.56 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 350.26 83.72 moveto
+343 76 lineto
+343.86 86.56 lineto
+closepath stroke
+[ /Rect [ 375 151 381 157 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (tailurl) >>
+  /Subtype /Link
+/ANN pdfmark
+[ /Rect [ 340 73 346 79 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (tailurl) >>
+  /Subtype /Link
+/ANN pdfmark
+[ /Rect [ 358.5 138.5 381.5 155.5 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (tailurl) >>
+  /Subtype /Link
+/ANN pdfmark
+0.000 0.000 0.000 edgecolor
+14 /Times-Roman set_font
+358.5 142.9 moveto 23 (size) alignedtext
+grestore
+% garf
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+407 59 27.1 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14 /Times-Roman set_font
+395.5 54.9 moveto 23 (garf) alignedtext
+grestore
+% word->garf
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 389 154 moveto
+392 136 398 108 402 87 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 405.47 87.49 moveto
+404 77 lineto
+398.61 86.12 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 405.47 87.49 moveto
+404 77 lineto
+398.61 86.12 lineto
+closepath stroke
+[ /Rect [ 386 151 392 157 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (labelurl) >>
+  /Subtype /Link
+/ANN pdfmark
+[ /Rect [ 401 74 407 80 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (labelurl) >>
+  /Subtype /Link
+/ANN pdfmark
+[ /Rect [ 394.5 118.5 417.5 135.5 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (garf) >>
+  /Subtype /Link
+/ANN pdfmark
+0.000 0.000 0.000 edgecolor
+14 /Times-Roman set_font
+394.5 122.9 moveto 23 (garf) alignedtext
+grestore
+% line
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+481 172 27 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14 /Times-Roman set_font
+470.5 167.9 moveto 21 (line) alignedtext
+grestore
+% all
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+481 59 27 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14 /Times-Roman set_font
+474 54.9 moveto 14 (all) alignedtext
+grestore
+% line->all
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 481 154 moveto
+481 136 481 108 481 87 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 484.5 87 moveto
+481 77 lineto
+477.5 87 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 484.5 87 moveto
+481 77 lineto
+477.5 87 lineto
+closepath stroke
+[ /Rect [ 478 151 484 157 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (tailURL) >>
+  /Subtype /Link
+/ANN pdfmark
+[ /Rect [ 478 74 484 80 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (headURL) >>
+  /Subtype /Link
+/ANN pdfmark
+[ /Rect [ 480.5 118.5 503.5 135.5 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (garf) >>
+  /Subtype /Link
+/ANN pdfmark
+0.000 0.000 0.000 edgecolor
+14 /Times-Roman set_font
+480.5 122.9 moveto 23 (garf) alignedtext
+[ /Rect [ 457 77.5 513 94.5 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (headURL) >>
+  /Subtype /Link
+/ANN pdfmark
+0.000 0.000 0.000 edgecolor
+14 /Times-Roman set_font
+457 81.9 moveto 56 (headlabel) alignedtext
+[ /Rect [ 454 136.5 500 153.5 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (tailURL) >>
+  /Subtype /Link
+/ANN pdfmark
+0.000 0.000 0.000 edgecolor
+14 /Times-Roman set_font
+454 140.9 moveto 46 (taillabel) alignedtext
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 557 234
+end
+restore
+%%EOF
